@@ -181,6 +181,10 @@ img {
     font-size: 20px;
     padding: 8px;
   }
+  
+  #scenario-text {
+    font-size: 14px; /* можно уменьшить под экран */
+  }
 }
 
 /* Планшеты */
