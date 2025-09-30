@@ -1,7 +1,29 @@
 // === Сценарии ===
 function showScenario(num) {
+  const img = document.getElementById("scenario-image");
+  const txt = document.getElementById("scenario-text");
+
+  if (num === 4) {
+    img.style.display = "none";        // скрываем картинку
+    txt.style.display = "block";       // показываем текст
+    txt.innerHTML = `
+      <h3>Сценарий 4</h3>
+      <p>Развитие международных связей, расширение сети дистрибуции и поиск новых рынков сбыта укрепят позиции России
+на международном рынке, а внедрение строгого контроля качества на всех этапах — от производства до торговли —
+обеспечит высокий стандарт продукции ХПП. При этом реализация этих планов невозможна без комплексного
+подхода, включающего разработку специализированных программ и использование экономических инструментов,
+таких как налоговые льготы, субсидии и инвестиционные стимулы
+https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/
+https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/</p>
+    `;
+  } else {
+    img.style.display = "block";       // показываем картинку
+    txt.style.display = "none";        // скрываем текст
+    img.src = "images/scenario" + num + ".png";
+  }
+
+  // Карта меняется для всех сценариев
   document.getElementById("map").src = "images/map" + num + ".png";
-  document.getElementById("scenario-image").src = "images/scenario" + num + ".png";
 }
 
 // === Меню ===
