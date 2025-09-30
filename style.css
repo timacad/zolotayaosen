@@ -59,11 +59,11 @@ img {
 }
 
 /* === Сценарий картинка === */
-.scenario-content img {
-  max-width: 70%;
-  margin-top: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.scenario-content {
+  display: flex;           /* делаем flex-контейнер */
+  justify-content: center; /* центрируем по горизонтали */
+  align-items: center;     /* центрируем по вертикали (если нужно) */
+  flex-direction: column;  /* элементы друг под другом */
 }
 
 /* === Нижние кнопки === */
