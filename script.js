@@ -7,8 +7,8 @@ function showScenario(num) {
     img.style.display = "none";        // скрываем картинку
     txt.style.display = "block";       // показываем текст
     txt.style.textAlign = "center";
-    txt.style.maxWidth = "600px";
-    txt.style.margin = "15px auto";
+    txt.style.maxWidth = "900px";
+    txt.style.margin = "16px auto";
     
     txt.innerHTML = `
       <h3>Сценарий 4</h3>
