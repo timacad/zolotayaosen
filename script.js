@@ -18,9 +18,9 @@ function showScenario(num) {
 подхода, включающего разработку специализированных программ и использование экономических инструментов,
 таких как налоговые льготы, субсидии и инвестиционные стимулы
 
-https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/
+<a href="https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/" target="_blank">
 
-https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/</p>
+<a href="https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/</p>" target="_blank">
     `;
   } else {
     img.style.display = "block";       // показываем картинку
