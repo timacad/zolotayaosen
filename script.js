@@ -12,15 +12,17 @@ function showScenario(num) {
     
     txt.innerHTML = `
       <h3>Сценарий 4</h3>
-      <p>Развитие международных связей, расширение сети дистрибуции и поиск новых рынков сбыта укрепят позиции России
+      <p>
+      Развитие международных связей, расширение сети дистрибуции и поиск новых рынков сбыта укрепят позиции России
 на международном рынке, а внедрение строгого контроля качества на всех этапах — от производства до торговли —
 обеспечит высокий стандарт продукции ХПП. При этом реализация этих планов невозможна без комплексного
 подхода, включающего разработку специализированных программ и использование экономических инструментов,
 таких как налоговые льготы, субсидии и инвестиционные стимулы
-
-<a href="https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/" target="_blank">
-
-<a href="https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/</p>" target="_blank">
+      </p>
+      <p>
+    Источник 1: <a href="https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/" target="_blank">belta.by</a><br>
+    Источник 2: <a href="https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/" target="_blank">profapkbrest.by</a>
+      </p>
     `;
   } else {
     img.style.display = "block";       // показываем картинку
