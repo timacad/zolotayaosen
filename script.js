@@ -6,6 +6,10 @@ function showScenario(num) {
   if (num === 4) {
     img.style.display = "none";        // скрываем картинку
     txt.style.display = "block";       // показываем текст
+    txt.style.textAlign = "center";
+    txt.style.maxWidth = "600px";
+    txt.style.margin = "15px auto";
+    
     txt.innerHTML = `
       <h3>Сценарий 4</h3>
       <p>Развитие международных связей, расширение сети дистрибуции и поиск новых рынков сбыта укрепят позиции России
@@ -13,7 +17,9 @@ function showScenario(num) {
 обеспечит высокий стандарт продукции ХПП. При этом реализация этих планов невозможна без комплексного
 подхода, включающего разработку специализированных программ и использование экономических инструментов,
 таких как налоговые льготы, субсидии и инвестиционные стимулы
+
 https://belta.by/regions/view/zelenoe-zoloto-antonovichej-417729-2020/
+
 https://profapkbrest.by/bizon-vklad-v-kachestvo-belorusskogo-piva/</p>
     `;
   } else {
