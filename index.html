@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <title>Интерактивная карта</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Карта -->
+    <div class="map-wrapper">
+      <img id="map" src="images/map1.png" alt="Карта России">
+    </div>
+
+    <!-- Кнопки сценариев -->
+    <div class="scenarios">
+      <button onclick="showScenario(1)">Сценарий 1</button>
+      <button onclick="showScenario(2)">Сценарий 2</button>
+      <button onclick="showScenario(3)">Сценарий 3</button>
+      <button onclick="showScenario(4)">Сценарий 4</button>
+    </div>
+
+    <!-- Картинка сценария -->
+    <div id="scenario-content" class="scenario-content">
+      <img id="scenario-image" src="images/scenario1.png" alt="Сценарий">
+    </div>
+
+    <!-- Нижние кнопки -->
+    <div class="bottom-buttons">
+      <button id="menuBtn">Меню</button>
+      <button id="atlasBtn">Атлас</button>
+    </div>
+
+    <!-- Окно меню -->
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <h2>Контакты</h2>
+        <p>Email: example@mail.com</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+      </div>
+    </div>
+
+    <!-- Окно атласа -->
+    <div id="atlasModal" class="modal">
+      <div class="modal-content atlas">
+        <span class="close" onclick="closeAtlas()">&times;</span>
+        <button class="atlas-nav" onclick="prevAtlas()">◀</button>
+        <img id="atlasImage" src="images/atlas1.png" alt="Атлас">
+        <button class="atlas-nav" onclick="nextAtlas()">▶</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
