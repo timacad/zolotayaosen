@@ -1,11 +1,10 @@
-// === Сценарии ===
 function showScenario(num) {
   const img = document.getElementById("scenario-image");
   const txt = document.getElementById("scenario-text");
 
   if (num === 4) {
-    img.style.display = "none";        // скрываем картинку
-    txt.style.display = "block";       // показываем текст
+    img.style.display = "none";
+    txt.style.display = "block";
     txt.style.textAlign = "center";
     txt.style.maxWidth = "900px";
     txt.style.margin = "16px auto";
@@ -24,21 +23,15 @@ function showScenario(num) {
       </p>
     `;
   } else {
-    img.style.display = "block";       // показываем картинку
-    txt.style.display = "none";        // скрываем текст
+    img.style.display = "block";
+    txt.style.display = "none";
     img.src = "images/scenario" + num + ".png";
   }
-
-  // Карта меняется для всех сценариев
   document.getElementById("map").src = "images/map" + num + ".png";
 }
-
-// === Меню ===
 const menuModal = document.getElementById("menuModal");
 document.getElementById("menuBtn").onclick = () => menuModal.style.display = "block";
 function closeMenu() { menuModal.style.display = "none"; }
-
-// === Атлас ===
 const atlasModal = document.getElementById("atlasModal");
 const atlasImage = document.getElementById("atlasImage");
 let atlasIndex = 1;
@@ -48,26 +41,21 @@ document.getElementById("atlasBtn").onclick = () => {
   atlasModal.style.display = "block";
   startAtlas();
 };
-
 function closeAtlas() {
   atlasModal.style.display = "none";
   clearInterval(atlasTimer);
 }
-
 function showAtlas(index) {
   atlasImage.src = "images/atlas" + index + ".png";
 }
-
 function nextAtlas() {
   atlasIndex = atlasIndex % 20 + 1;
   showAtlas(atlasIndex);
 }
-
 function prevAtlas() {
   atlasIndex = (atlasIndex - 2 + 20) % 20 + 1;
   showAtlas(atlasIndex);
 }
-
 function startAtlas() {
   atlasIndex = 1;
   showAtlas(atlasIndex);
