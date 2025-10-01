@@ -10,9 +10,10 @@ body {
 button {
   color: #000 !important;                  /* цвет текста */
   -webkit-text-fill-color: #000 !important; /* для iOS Safari */
-  background-color: #fff;                  /* фон кнопки */
+  background-color: #e4f0d8;   /* фон кнопки */
   -webkit-appearance: none;                /* отключает системный стиль кнопки */
   border: none;
+  border-radius: 8px;   /* сглаженные углы */
   padding: 6px 12px;
   font-size: 16px;
   cursor: pointer;
