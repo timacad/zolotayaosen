@@ -19,6 +19,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #afbe9f;
+}
+
 /* Для span внутри кнопки, если есть */
 button span {
   color: #000 !important;
